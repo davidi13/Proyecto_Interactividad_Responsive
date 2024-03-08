@@ -1,0 +1,406 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    color: #000000; /* Agregar color de texto predeterminado */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header {
+    background-color: #654321; /* Marrón oscuro */
+    color: #ffffff; /* Blanco */
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Blanco */
+    transition: color 0.3s; /* Transición suave del color */
+}
+
+/* Cambiar el color de los enlaces al pasar el ratón sobre ellos */
+nav ul li a:hover {
+    color: rgb(186, 186, 186); /* Color más oscuro */
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    color: #654321; /* Marrón oscuro */
+}
+
+/* Formulario de contacto */
+#contactForm input,
+#contactForm textarea,
+#contactForm button {
+    display: block;
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Botón de enviar */
+#contactForm button {
+    background-color: #654321; /* Marrón oscuro */
+    color: #ffffff; /* Blanco */
+    border: none;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #876b49; /* Marrón medio */
+}
+
+footer {
+    background-color: #654321; /* Marrón oscuro */
+    color: #ffffff; /* Blanco */
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Botón de reserva */
+#btnReserva {
+    background-color: #654321; /* Marrón oscuro */
+    color: #ffffff; /* Blanco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#btnReserva:hover {
+    background-color: #876b49; /* Marrón medio */
+}
+
+/* Eliminar el espacio en blanco entre el nav y el carrusel */
+header {
+    margin-bottom: 0;
+}
+
+/* Ajustar el tamaño de las imágenes del carrusel */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ajustar la imagen para cubrir todo el contenedor manteniendo su relación de aspecto */
+    max-height: 70vh; /* Establecer la altura máxima en el 70% del tamaño de la ventana del navegador */
+    margin: auto; /* Centrar horizontalmente */
+}
+
+/* Ajuste de márgenes para eliminar el espacio en blanco */
+#carouselSection {
+    margin-top: 20px; /* Ajusta el margen superior negativo */
+    padding-top: 0; /* Elimina el relleno superior */
+}
+
+/* Estilos para la notificación */
+.notification {
+    position: fixed;
+    top: 40px;
+    left: 30px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 0.7vw;
+    border-radius: 5px;
+    animation: slideIn 0.5s forwards;
+    z-index: 9999; 
+}
+.notification {
+    /* Estilos para la notificación */
+    display: none; /* Inicialmente oculta la notificación */
+}
+
+.notification.active {
+    /* Estilos para la notificación cuando está activa */
+    display: block; /* Muestra la notificación cuando tiene la clase 'active' */
+}
+
+@media (max-width: 768px) {
+    .notification {
+        top: 7vw; /* Ajustar el espacio desde la parte superior en relación con el ancho de la ventana gráfica en dispositivos pequeños */
+        left: 7vw; /* Ajustar el espacio desde la izquierda en relación con el ancho de la ventana gráfica en dispositivos pequeños */
+        padding: 2vw; /* Ajustar el padding en relación con el ancho de la ventana gráfica en dispositivos pequeños */
+        font-size: 2vw; /* Ajustar el tamaño de fuente en relación con el ancho de la ventana gráfica en dispositivos pequeños */
+    }
+}
+/* Estilos para el botón de cierre */
+.close-btn {
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+}
+
+/* Animación de entrada */
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    max-width: 100%; /* Asegura que el carrusel no supere el ancho de la pantalla */
+    overflow: hidden; /* Evita que las imágenes se desborden del contenedor */
+}
+
+.image-wrapper {
+    max-width: 100%; /* Asegura que el contenedor de la imagen no supere el ancho de la pantalla */
+    max-height: 500px; /* Establece una altura máxima para el contenedor */
+}
+
+.image-wrapper img {
+    width: 100%;
+}
+
+/* Ajustar el tamaño del carrusel en dispositivos pequeños */
+@media (max-width: 768px) {
+    .carousel-item img {
+        max-height: 50vh; /* Reducir la altura máxima en dispositivos pequeños */
+    }
+}
+
+/* Ajustar el tamaño del carrusel en dispositivos grandes */
+@media (min-width: 1200px) {
+    .carousel-item img {
+        max-height: 90vh; /* Aumentar la altura máxima en dispositivos grandes */
+    }
+}
+
+/* Estilos para la barra de texto en movimiento */
+.moving-text-container {
+    overflow: hidden;
+    position: relative;
+    height: 30px;
+    background-color: white; /* Color de fondo de la barra */
+}
+
+.moving-text {
+    position: absolute;
+    white-space: nowrap;
+    animation: moveText 20s linear infinite; /* Ajusta la duración de la animación */
+    color: black; /* Color del texto */
+    font-size: 16px; /* Tamaño del texto */
+    padding: 5px 20px; /* Añade espacio alrededor del texto */
+    left: 50%; /* Centra el texto horizontalmente */
+    transform: translateX(-50%); /* Ajusta el centrado horizontal */
+}
+
+/* Animación de movimiento */
+@keyframes moveText {
+    0% { left: 100%; } /* Inicia el texto fuera del contenedor a la derecha */
+    95% { left: -100%; } /* Mueve el texto fuera del contenedor a la izquierda */
+    100% { left: 100%; } /* Restablece la posición inicial para que el texto se muestre más tiempo */
+}
+
+.habitaciones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 10px;
+}
+
+.habitaciones-grid img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para el formulario de reserva */
+#reservationForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex-basis: calc(20% - 10px); /* Ajusta el ancho de cada campo */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="date"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #654321; /* Marrón oscuro */
+    color: #ffffff; /* Blanco */
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #876b49; /* Marrón medio */
+}
+
+/* Estilos para el contenedor de las imágenes de reserva */
+#roomImageContainer {
+    text-align: center; /* Centrar horizontalmente */
+    margin-top: 50px; /* Espacio entre el formulario de reserva y las imágenes */
+}
+
+#roomImageContainer img {
+    width: 50vw; /* Ancho deseado para las imágenes */
+    height: auto; /* Mantener la proporción */
+    border-radius: 10px; /* Añadir bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+    transition: transform 0.3s ease; /* Efecto de transición al pasar el ratón */
+}
+
+#roomImageContainer img:hover {
+    transform: scale(1.1); /* Aumentar ligeramente el tamaño al pasar el ratón */
+}
+@media (max-width: 768px) {
+    #roomImageContainer img {
+        width: 40vh; 
+    }
+}
+#mapa{
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+#mapa iframe {
+    width: 100%;
+    height: 750px; /* Puedes ajustar la altura según sea necesario */
+    border: 0;
+    filter: grayscale(0); /* Asegura que el mapa no esté en blanco y negro inicialmente */
+}
+#map_id{
+    color: #654321;
+    font-size:40px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.cookie-notification {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    color: #654321;
+    padding: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: bottom 0.5s ease; /* Animación de apertura/cierre */
+}
+
+.cookie-notification button {
+    margin: 0 10px;
+}
+
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #654321;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    color: rgb(186, 186, 186);
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    text-decoration: none;
+    color: rgb(27, 27, 27);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #654321;
+}
+
+.habitacion-title {
+    color: #654321; /* Marrón oscuro */
+    text-align: center; /* Centrar horizontalmente */
+    margin-top: 20px; /* Espacio superior */
+    margin-bottom: 40px; /* Espacio inferior */
+}
+
+#habitacion1,
+#habitacion2,
+#habitacion3{
+    padding:100px;
+}
+
+.carousel {
+    border-radius: 10px; /* Redondear las esquinas del carrusel */
+    overflow: hidden; /* Ocultar el contenido que se desborda del carrusel */
+}
