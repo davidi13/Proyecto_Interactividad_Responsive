@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyHotels - Localización</title>
+    <link rel="stylesheet" href="css/login-styles.css">
+    <link rel="stylesheet" href="css/modo-oscuro.css">
+    <link rel="stylesheet" href="css/orbe-flotante.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="notification" class="notification">
+        <span class="close-btn" onclick="closeNotification()">&times;</span>
+        Esto es una notificación emergente
+    </div>
+    <div class="moving-text-container">
+        <div class="moving-text">¡Bienvenido a MyHotels! Disfruta ahora de nuestros increíbles descuentos por semana santa, hasta 50% de descuento en habitaciones de lujo</div>
+    </div>
+    <header>
+        <div class="container">
+            <h1>MyHotels</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Habitaciones</button>
+                        <div class="dropdown-content">
+                            <a href="habitaciones.html#habitacion1">Habitación 1</a>
+                            <a href="habitaciones.html#habitacion2">Habitación 2</a>
+                            <a href="habitaciones.html#habitacion3">Habitación 3</a>
+                        </div>
+                    </div>
+                    <li><a href="index.html#reservas">Reserva</a></li>
+                    <li><a href="location.html">Localización</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+                <button id="dark-mode-toggle">Modo Oscuro</button>
+            </nav>
+        </div>
+    </header>
+
+    <section id="mapa">
+        <div>
+            <h2 id="map_id">¿Dónde estamos?</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5642.331851873564!2d2.6913584260054937!3d39.54826869643772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129793f11bd733bd%3A0xe597992dc43e5c8e!2sPortofino%20Mallorca!5e0!3m2!1ses!2ses!4v1709848423396!5m2!1ses!2ses" width="600" height="450" style="border:0; filter: grayscale(0);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <!-- Widget formulario flotante -->
+    <div id="floating-widget" class="floating-widget">
+        <div id="widget-content" class="widget-content">
+            <!-- Contenido del formulario -->
+            <form id="widget-form">
+                <textarea id="widget-textarea" placeholder="Escribe tu mensaje aquí..."></textarea>
+                <button type="submit" id="widget-submit">Enviar</button>
+            </form>
+        </div>
+        <div id="widget-toggle" class="widget-toggle" onclick="toggleWidget()">
+            <img src="Multimedia/logo_bot.png" alt="Logo" class="widget-logo">
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MyHotels. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/orbe_flotante.js"></script>
+    <script src="js/notificación_emergente.js"></script>
+    <script src="js/orbe_flotante.js"></script>
+    <script src="js/reserva-script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

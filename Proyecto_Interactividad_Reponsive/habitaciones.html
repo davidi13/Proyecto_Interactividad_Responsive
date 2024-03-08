@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyHotels - Habitaciones</title>
+    <link rel="stylesheet" href="css/login-styles.css">
+    <link rel="stylesheet" href="css/modo-oscuro.css">
+    <link rel="stylesheet" href="css/orbe-flotante.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Agregar estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="notification" class="notification">
+        <span class="close-btn" onclick="closeNotification()">&times;</span>
+        Esto es una notificación emergente
+    </div>
+    <div class="moving-text-container">
+        <div class="moving-text">¡Bienvenido a MyHotels! Disfruta ahora de nuestros increíbles descuentos por semana santa, hasta 50% de descuento en habitaciones de lujo</div>
+    </div>
+    <header>
+        <div class="container">
+            <h1>MyHotels</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn">Habitaciones</button>
+                        <div class="dropdown-content">
+                            <a href="habitaciones.html#habitacion1">Habitación 1</a>
+                            <a href="habitaciones.html#habitacion2">Habitación 2</a>
+                            <a href="habitaciones.html#habitacion3">Habitación 3</a>
+                        </div>
+                    </div>
+                    <li><a href="index.html#reservas">Reserva</a></li>
+                    <li><a href="location.html">Localización</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+                <button id="dark-mode-toggle">Modo Oscuro</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Carrusel para Habitación 1 -->
+    <section id="habitacion1">
+        <h2 class="habitacion-title"> Habitación 1</h2>
+        <div id="carouselHabitacion1" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Multimedia/habitacion-1.png" class="d-block w-100" alt="Habitación 1 - Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="Multimedia/habitacion-1.png" class="d-block w-100" alt="Habitación 1 - Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="Multimedia/habitacion-1.png" class="d-block w-100" alt="Habitación 1 - Imagen 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselHabitacion1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselHabitacion1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Carrusel para Habitación 2 -->
+    <section id="habitacion2">
+        <h2 class="habitacion-title"> Habitación 2</h2>
+        <div id="carouselHabitacion2" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Multimedia/habitacion-2.jpg" class="d-block w-100" alt="Habitación 2 - Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="Multimedia/habitacion-2.jpg" class="d-block w-100" alt="Habitación 2 - Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="Multimedia/habitacion-2.jpg" class="d-block w-100" alt="Habitación 2 - Imagen 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselHabitacion2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselHabitacion2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Carrusel para Habitación 3 -->
+    <section id="habitacion3">
+        <h2 class="habitacion-title"> Habitación 3</h2>
+        <div id="carouselHabitacion3" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Multimedia/habitacion-3.png" class="d-block w-100" alt="Habitación 3 - Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="Multimedia/habitacion-3.png" class="d-block w-100" alt="Habitación 3 - Imagen 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="Multimedia/habitacion-3.png" class="d-block w-100" alt="Habitación 3 - Imagen 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselHabitacion3" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselHabitacion3" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Widget formulario flotante -->
+    <div id="floating-widget" class="floating-widget">
+        <div id="widget-content" class="widget-content">
+            <!-- Contenido del formulario -->
+            <form id="widget-form">
+                <textarea id="widget-textarea" placeholder="Escribe tu mensaje aquí..."></textarea>
+                <button type="submit" id="widget-submit">Enviar</button>
+            </form>
+        </div>
+        <div id="widget-toggle" class="widget-toggle" onclick="toggleWidget()">
+            <img src="Multimedia/logo_bot.png" alt="Logo" class="widget-logo">
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MyHotels. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/orbe_flotante.js"></script>
+    <script src="js/notificación_emergente.js"></script>
+    <script src="js/orbe_flotante.js"></script>
+    <script src="js/reserva-script.js"></script>
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
