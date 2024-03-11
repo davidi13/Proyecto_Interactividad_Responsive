@@ -18,9 +18,16 @@ En este página web hay tecnologías muy innovadoras gracias a la implementació
 
 Este widget es el orbe situado en la parte inferior derecha que te permite dejar comentarios a la página en todo momento con su propiedad sticky.
 
-## Modo Oscuro
+![Chat del widget fijo que se abre y se cierra](Multimedia/Captura3.PNG)
+
+## Modo Oscuro y responsive.
 
 Este botón tambien sticky situado en la parte superior derecha se encarga de que en todo momento puedas cambiar el estilo de la web a uno de colores más oscuros , además al entrar en la web el javascript se encarga de ver si en tu sistema operativo utilizas el modo oscuro para adaptarlo nada más entrar.
+
+![Página principal en modo oscuro](Multimedia/Captura5.PNG)
+![Formulario de login , en login.html en modo oscuro](Multimedia/Captura11.PNG)
+![Página de localización, con mapa que se vuelve en blanco y negro](Multimedia/Captura10.PNG)
+![Apartado de reservas de la página Main con modo oscuro y responsive](Multimedia/Captura14.PNG)
 
 ## Notificaciones y elementos dinámicos
 
@@ -30,15 +37,26 @@ Además al entrar a la web tendras un slide que surge de la parte inferior de la
 
 También tienes en la parte superior de la página un bloque de texto en movimiento hablando de los "descuentos de la web" 
 
+![Texto en movimiento y botón de modo oscuro](Multimedia/Captura4.PNG)
+![Notificación emergente](Multimedia/Captura2.PNG)
+
 ## Carrusel
 
 Mi página web al ser orientada a un hotel, hay muchisimos carrusel de imagenes mostrando distintas habitaciones o instalaciones de hotel, que cambian automáticamente de imagen para el usuario , además de contar con una flechita para cambiar. Para esta parte he utilizado librerias de boostrap y js que me facilitaban la creación de los carrusel
 
-## Formularios
+![Parte principal de la página](Multimedia/Captura.PNG)
+![Página de habitacioens con carrusel , en modo responsive](Multimedia/Captura12.PNG)
+![Galería de imágenes](Multimedia/Captura7.PNG)
+
+## Formularios y imágenes
 
 Por último mencionar la joya de la corona , los formularios. Como no podía faltar en un hotel tienes un formulario de reserva de hotel con restricciones de fechas inversas o ya pasadas de la actual. Tambien hay una página web login.html dedicada para un formulario de registro con restricciones de correo y contraseña.
 
 Y por último el formulario de contacto en la parte inferior de index.html. Además del formulario tipo texto que tiene el widget antes mencionado.
+
+![Apartado de reservas de la página main](Multimedia/Captura8.PNG)
+![Apartado de contacto de la página main](Multimedia/Captura9.PNG)
+![Formulario de login , en login.html en modo oscuro](Multimedia/Captura11.PNG)
 
 # Características 
 
@@ -55,20 +73,8 @@ Las carácteristicas que definen esta web son:  dinámica , colorida , útil y m
 - Texto en movimiento en la parte superior de la página
 - Cambios de color al situar el ratón sobre botones o elementos del nav
 
-# Imagenes de partes importantes de la página
 
-![Parte principal de la página](Multimedia/Captura.PNG)
-![Notificación emergente](Multimedia/Captura2.PNG)
-![Chat del widget fijo que se abre y se cierra](Multimedia/Captura3.PNG)
-![Texto en movimiento y botón de modo oscuro](Multimedia/Captura4.PNG)
-![Página principal en modo oscuro](Multimedia/Captura5.PNG)
-![Galería de imágenes](Multimedia/Captura7.PNG)
-![Apartado de reservas de la página main](Multimedia/Captura8.PNG)
-![Apartado de contacto de la página main](Multimedia/Captura9.PNG)
-![Página de localización, con mapa que se vuelve en blanco y negro](Multimedia/Captura10.PNG)
-![Formulario de login , en login.html en modo oscuro](Multimedia/Captura11.PNG)
-![Página de habitacioens con carrusel , en modo responsive](Multimedia/Captura12.PNG)
-![Apartado de reservas de la página Main con modo oscuro y responsive](Multimedia/Captura14.PNG)
+
 
 
 
